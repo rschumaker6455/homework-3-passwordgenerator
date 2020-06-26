@@ -1,0 +1,94 @@
+body {
+    background-color: darkslategray;
+    margin: 0;
+    color: floralwhite;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.container {
+    background-color: gray;
+    padding: 3vh;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    padding-bottom: 1vh;
+    text-align: center;
+    font-size: 50px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.charAmount {
+    display: flex;
+    align-items: center;
+}
+
+.number-input {
+    width: 2.5rem;
+}
+
+.password-display {
+    background-color: floralwhite;
+    color: black;
+    padding: 1rem;
+    margin-bottom: 1vh;
+    border: 1px solid darkslategray;
+    border-radius: .5rem;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+.btn1 {
+    grid-column: span 1;
+    background-color: transparent;
+    border: 2px solid floralwhite;
+    color: floralwhite;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: #ffffff33;
+}
+
+.btn2 {
+    grid-column: span 1;
+    background-color: transparent;
+    border: 2px solid floralwhite;
+    color: floralwhite;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #ffffff33;
+}
