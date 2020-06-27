@@ -39,7 +39,7 @@ function generatePassword(characterAmount, includeUppercase, includeNumbers, inc
     var passwordCharacters = []
     for (let i = 0; i < characterAmount; i++) {
         var characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
-        passwordCharacter.push(String.fromCharCode(charaterCode))
+        passwordCharacters.push(String.fromCharCode(characterCode))
     }
     return passwordCharacters.join('')
 }
