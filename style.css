@@ -10,7 +10,7 @@ body {
 }
 .container {
     background-color: gray;
-    padding: 3vh;
+    padding: 10vh;
     border-radius: 1rem;
     border: 2px solid black;
     display: flex;
@@ -30,7 +30,7 @@ body {
 
 .title {
     margin: 0;
-    padding-bottom: 1vh;
+    padding-bottom: 5vh;
     text-align: center;
     font-size: 50px;
 }
@@ -52,11 +52,11 @@ label {
     background-color: floralwhite;
     color: black;
     padding: 1rem;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
     border: 1px solid darkslategray;
     border-radius: .5rem;
     height: 2rem;
-    width: 350px;
+    width: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +72,7 @@ label {
     font-weight: bold;
     border-radius: 1rem;
     cursor: pointer;
+    margin-top: 5vh;
 }
 
 .btn1:hover {
@@ -87,8 +88,122 @@ label {
     font-weight: bold;
     border-radius: 1rem;
     cursor: pointer;
+    margin-top: 5vh;
 }
 
 .btn2:hover {
     background-color: #ffffff33;
+}
+
+@media (max-width: 700px) {
+    .container {
+        background-color: gray;
+        padding: 3vh;
+        border-radius: 1rem;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .form {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 1rem;
+        column-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title {
+        margin: 0;
+        padding-bottom: 3vh;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .password-display {
+        background-color: floralwhite;
+        color: black;
+        padding: 1rem;
+        margin-bottom: 5vh;
+        border: 1px solid darkslategray;
+        border-radius: .5rem;
+        height: 2rem;
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-break: break-all;
+    }
+
+    .btn1 {
+        grid-column: span 1;
+        background-color: transparent;
+        border: 2px solid floralwhite;
+        color: floralwhite;
+        padding: .5rem 1rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        cursor: pointer;
+        margin-top: 1vh;
+    }
+
+    .btn2 {
+        grid-column: span 1;
+        background-color: transparent;
+        border: 2px solid floralwhite;
+        color: floralwhite;
+        padding: .5rem 1rem;
+        font-weight: bold;
+        border-radius: 1rem;
+        cursor: pointer;
+        margin-top: 1vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 75%;
+        background-color: gray;
+        padding: 3vh;
+        border-radius: 1rem;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .form {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title {
+        margin: 0;
+        padding-bottom: 3vh;
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    .password-display {
+        background-color: floralwhite;
+        color: black;
+        padding: 1rem;
+        margin-bottom: 5vh;
+        border: 1px solid darkslategray;
+        border-radius: .5rem;
+        height: 2rem;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-break: break-all;
+    }
 }

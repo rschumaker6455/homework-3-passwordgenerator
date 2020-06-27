@@ -21,7 +21,6 @@
             <input type="range" min="8" max="128" value="8" id="characterAmountRange">
             <input class="number-input" type="number" min="8" max="128" value="8" id="characterAmountNumber">
             </div>
-
             
             <label for="includeUppercase">Include Uppercase</label>
             <input type="checkbox" id="includeUppercase">
@@ -33,7 +32,7 @@
             <input type="checkbox" id="includeSymbols">
 
             <button class="btn1" type="submit">Generate Password</button>
-            <button class="btn2" type="submit">Copy to Clipboard</button>
+            <button class="btn2" type="submit" onclick="copyToClipboard()">Copy to Clipboard</button>
             
         </form>
 

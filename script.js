@@ -44,7 +44,13 @@ function generatePassword(characterAmount, includeUppercase, includeNumbers, inc
     return passwordCharacters.join('')
 }
 
-
+function copyToClipboard() {
+  var copyText = document.getElementById('passwordDisplay')
+  copyText.select() 
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand('copy')
+  alert('Copied the text: ' + copyText.value)
+}
 
 function arrayFromLowToHigh(low, high) {
     array = []
