@@ -64,7 +64,7 @@ label {
 }
 
 .btn1 {
-    grid-column: span 1;
+    grid-column: span 2;
     background-color: transparent;
     border: 2px solid floralwhite;
     color: floralwhite;
@@ -79,21 +79,6 @@ label {
     background-color: #ffffff33;
 }
 
-.btn2 {
-    grid-column: span 1;
-    background-color: transparent;
-    border: 2px solid floralwhite;
-    color: floralwhite;
-    padding: .5rem 1rem;
-    font-weight: bold;
-    border-radius: 1rem;
-    cursor: pointer;
-    margin-top: 5vh;
-}
-
-.btn2:hover {
-    background-color: #ffffff33;
-}
 
 @media (max-width: 700px) {
     .container {
@@ -139,19 +124,7 @@ label {
     }
 
     .btn1 {
-        grid-column: span 1;
-        background-color: transparent;
-        border: 2px solid floralwhite;
-        color: floralwhite;
-        padding: .5rem 1rem;
-        font-weight: bold;
-        border-radius: 1rem;
-        cursor: pointer;
-        margin-top: 1vh;
-    }
-
-    .btn2 {
-        grid-column: span 1;
+        grid-column: span 2;
         background-color: transparent;
         border: 2px solid floralwhite;
         color: floralwhite;

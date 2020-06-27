@@ -5,6 +5,7 @@ var includeNumbersElement = document.getElementById('includeNumbers')
 var includeSymbolsElement = document.getElementById('includeSymbols')
 var form = document.getElementById('passwordGeneratorForm')
 var passwordDisplay = document.getElementById('passwordDisplay')
+var copy = document.getElementById('copyToClipboard')
 
 var LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122)
 var UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90)
@@ -30,6 +31,7 @@ form.addEventListener('submit', e => {
     passwordDisplay.innerText = password
 })
 
+
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
     var charCodes = LOWERCASE_CHAR_CODES
     if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
@@ -44,13 +46,7 @@ function generatePassword(characterAmount, includeUppercase, includeNumbers, inc
     return passwordCharacters.join('')
 }
 
-function copyToClipboard() {
-  var copyText = document.getElementById('passwordDisplay')
-  copyText.select() 
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand('copy')
-  alert('Copied the text: ' + copyText.value)
-}
+
 
 function arrayFromLowToHigh(low, high) {
     array = []
